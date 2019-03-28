@@ -1,0 +1,297 @@
+/*------------------------------------*\
+    #Features
+\*------------------------------------*/
+
+.feature-card {
+    position: relative;
+}
+
+.feature-card .feature-card-icon {
+    margin-bottom: 22px;
+}
+
+.feature-card .feature-card-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature-card .feature-card-icon i {
+    font-size: 64px;
+    color: @color-theme;
+    font-weight: 400;
+
+}
+
+.feature-card .feature-card-title {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.feature-card .feature-card-desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Featured #1 */
+
+.featured-1 .col-content {
+    padding: 0 !important;
+}
+
+.featured-1 .featured-img img {
+    margin-left: -60%;
+    height: 620px;
+}
+
+.featured-1 .feature-card-content {
+    padding-right: 15px;
+}
+
+/* featured #2 */
+
+.featured-2 .feature-card {
+    margin-bottom: 50px;
+}
+
+.featured-2 .feature-card .feature-card-icon {
+    margin-bottom: 30px;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.featured-2 .feature-card .feature-card-icon i {
+    z-index: 1;
+    position: relative;
+    padding-top:10px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.featured-2 .feature-card .feature-card-icon:hover i {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.featured-2 .feature-card .feature-card-icon:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 6px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 180, 0, 0.15));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 180, 0, 0.15));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 180, 0, 0.15));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 180, 0, 0.15));
+
+
+}
+
+.featured-2 .feature-card .feature-card-title {
+    font-size: 20px;
+}
+
+.featured-2 .feature-card-content {
+    padding-right: 20px;
+}
+
+/* featured #3 */
+
+.featured-3 .feature-card {
+    margin-bottom: 40px;
+}
+
+.featured-3 .feature-card-icon {
+    position: absolute;
+    top: 55px;
+    left: 32px;
+}
+
+.featured-3 .feature-card-icon i {
+    font-size: 32px;
+    color: #f9f9f9;
+    font-weight: 400;
+}
+
+.featured-3 .feature-card-content {
+    padding-left: 100px;
+}
+
+.featured-3 .feature-card-title {
+    color: #fff;
+}
+
+.featured-3 .read--more {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 29px;
+}
+
+.featured-3 .read--more i {
+    margin-right: 7px;
+}
+
+.featured-3 .feature-card:hover .read--more {
+    color: #fff;
+}
+
+.featured-3 .video-button {
+    margin-top: 36px;
+}
+
+.featured-3 .video--button {
+    height: 439px;
+}
+
+
+/* featured #4 */
+
+.featured-4 .feature-card {
+    margin-bottom: 46px;
+}
+
+.featured-4 .feature-card-icon {
+    top: 10px;
+    left: 0;
+}
+
+.featured-4 .feature-card-content {
+    padding-left: 80px;
+}
+
+/* featured #5 */
+
+.featured-5 {
+    overflow: visible;
+}
+
+.featured-5 .feature-card {
+    margin-bottom: 50px;
+}
+
+.featured-5 .bitcoin-calculator {
+    margin-top: -260px;
+}
+
+/* featured #6 */
+
+.featured-6 .feature-card .feature-card-title {
+    color: @color-heading;
+}
+
+.featured-6 .heading {
+    margin-bottom: 48px;
+}
+
+.featured-6 .heading .heading--title {
+    font-weight: 500;
+}
+
+.featured-6 .featured-img {
+    padding-top: 33px;
+}
+
+/* featured #7 */
+
+.featured-7 .feature-card .feature-card-icon {
+    margin-bottom: 33px;
+}
+
+.featured-7 .feature-card .feature-card-title {
+    font-size: 20px;
+}
+
+/* featured #8 */
+
+.featured-8 .heading {
+    margin-top: 36px;
+}
+
+.featured-8 .heading--desc {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 0 100px;
+    margin-bottom: 43px;
+}
+
+.featured-8 .heading--title {
+    margin-bottom: 31px;
+}
+
+.featured-8 .btn {
+    width: 270px;
+    text-transform: capitalize;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .featured-4 .container-fluid {
+        padding-left: 15px;
+    }
+
+    .featured-1 .col-content {
+        padding: 30px !important;
+    }
+    .featured-1 .featured-img img {
+        margin-left: 0;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .featured-6 .pl-100 {
+        padding-left: 15px !important;
+    }
+    .featured-7 .feature-card {
+        margin-bottom: 30px;
+    }
+    .featured-5 .bitcoin-calculator{
+        margin-top: 0;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .featured-1 .col-content {
+        padding: 30px !important;
+    }
+    .featured-1 .featured-img img {
+        margin-left: 0;
+        height: auto;
+        max-width: 100%;
+    }
+    .featured-6 .pl-100 {
+        padding-left: 15px !important;
+    }
+    .featured-7 .feature-card {
+        margin-bottom: 30px;
+    }
+    .featured-5 .bitcoin-calculator{
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .featured-1 .featured-img img {
+        margin-left: -90%;
+    }
+
+}

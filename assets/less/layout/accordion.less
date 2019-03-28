@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    #Accordion
+\*------------------------------------*/
+/* Accordion Base */
+.accordion {
+	border: 1px solid #ededed;
+}
+.accordion .panel {
+  padding: 32px;
+  margin-bottom: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 1px;
+  background-color: #f4f4f4;
+	border-bottom: 1px solid #ededed;
+}
+.accordion .panel:last-of-type{
+	border-bottom: none;
+}
+.accordion .panel .panel--heading {
+  padding:0;
+}
+.accordion .panel .panel--heading a {
+font-family: @font-body;
+  font-size: 16px;
+  color: @color-theme;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+  position: relative;
+  display: block;
+}
+.accordion .panel .panel--heading a.collapsed {
+  color: @color-heading;
+}
+.accordion .panel .panel--body {
+  padding: 22px 0 6px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* Accordion Status */
+.accordion .panel--heading .accordion-toggle:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "\f068";
+  /* symbol for "opening" panels */
+  font-family: fontawesome;
+  font-size: 9px;
+  color: @color-white;
+  background-color: @color-theme;
+  border: 1px solid @color-theme;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+.accordion .panel--heading .accordion-toggle.collapsed:after {
+  content: "\f067";
+  /* symbol for "collapsed" panels */
+  background-color: transparent;
+    content: "\f067";
+    color: @color-heading;
+    border: none
+}
+/* Accordion Style #1 */
+.accordion.accordion-1 .panel--heading a {
+  padding-left: 0;
+}
+
+
+/* Accordion Style #2 */
+.accordion.accordion-2 .panel {
+  background-color: transparent
+}
+

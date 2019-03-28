@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+.pagination {
+	margin: 0;
+	.rounded(0);
+}
+
+.pagination > li {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	background-color: transparent;
+	color: @color-body;
+	font-family: @font-body;
+	font-size: 20px;
+	font-weight: 700;
+	border-color:2px solid rgba(34, 34, 34, 0.1);
+	text-transform: uppercase;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.pagination > .active > a,
+.pagination > li:hover > a,
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+	background-color: @color-theme !important;
+	color: @color-white;
+	border-color: @color-theme;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a, 
+.pagination>li:last-child>span {
+	border-radius: 50%;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	border-color: @color-theme;
+}

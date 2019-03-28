@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #PRICING-SECTION
+\*------------------------------------*/
+
+.pricing-panel {
+    position: relative;
+    text-align: center
+}
+
+.pricing-panel .pricing--heading {
+    box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 50px 64px;
+    margin-bottom: 30px;
+}
+
+.pricing-panel .pricing--heading .pricing--icon {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-panel .pricing--heading h4 {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+}
+
+.pricing-panel .pricing--heading p {
+    font-family: @font-heading;
+    color: #333333;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.pricing-panel .pricing--heading .pricing--desc {
+    color: #a5a5a5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 46px;
+}
+
+.pricing-panel .btn--secondary {
+    border: 2px solid rgba(34, 34, 34, 0.1);
+}
+
+.pricing-panel .pricing--footer {
+    color: @color-heading;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pricing-active .pricing-panel .pricing--heading {
+   background-image: -moz-linear-gradient( 180deg, rgb(248,161,55) 0%, rgb(251,172,71) 64%, rgb(254,183,86) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(248,161,55) 0%, rgb(251,172,71) 64%, rgb(254,183,86) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(248,161,55) 0%, rgb(251,172,71) 64%, rgb(254,183,86) 100%);
+  background-image: linear-gradient( 180deg, rgb(248,161,55) 0%, rgb(251,172,71) 64%, rgb(254,183,86) 100%);
+  
+    padding: 70px 64px;
+    margin-top: -20px;
+}
+
+.pricing-active .pricing-panel .pricing--heading p,
+.pricing-active .pricing-panel .pricing--heading .pricing--desc {
+    color: @color-white;
+}
+
+.pricing--notes {
+    color: #a5a5a5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* pricing #2 */
+
+.pricing-2 {
+    overflow: visible;
+}
+.pricing-2 .pricing-wrapper{
+    margin-top: -240px;
+    position: relative;
+    z-index: 2
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+    .pricing-panel{
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+    .pricing-active .pricing-panel .pricing--heading{
+        margin-top: 0;
+    }
+    
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+       .pricing-panel{
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+        .pricing-active .pricing-panel .pricing--heading{
+        margin-top: 0;
+    }
+    
+}
