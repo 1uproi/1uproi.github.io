@@ -1462,6 +1462,9 @@ a:hover {
 .header .logo a img.logo-dark {
     opacity: 0;
 }
+.header-fixed p {
+  display: none;
+}
 .header.header-fixed .logo a img.logo-light {
     opacity: 0;
 }
@@ -1499,7 +1502,8 @@ body.dark .header .logo a img.logo-light {
 }
 body.dark .header .logo a img.logo-dark {
     opacity: 1;
-    width: 50px;
+    width: 75px;
+    position: relative;
 }
 body.dark .header.header-fixed .logo a img.logo-light {
     opacity: 1;
@@ -1507,6 +1511,7 @@ body.dark .header.header-fixed .logo a img.logo-light {
 }
 body.dark .header.header-fixed .logo a img.logo-dark {
     opacity: 0;
+    position: fixed;
 }
 /* Navigation Menu */
 
@@ -1952,18 +1957,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 .services .services-box-item.hover {
     text-decoration: none;
 }
-.services .services-box-item:hover> .services-box-item-cover,
-.services .services-box-item:focus> .services-box-item-cover,
-.services .services-box-item.hover> .services-box-item-cover {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.services .services-box-item:hover> .services-box-item-content,
-.services .services-box-item:focus> .services-box-item-content,
-.services .services-box-item.hover> .services-box-item-content {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-}
+
 .services .services-box-item-cover,
 .services .services-box-item-content {
     position: relative;
@@ -1977,6 +1971,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     transform: rotateY(0deg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    height: 350px;
 }
 .services .services-box-item-cover {
     position: absolute;
@@ -2013,8 +2008,6 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     margin: -16px -6px;
     padding: 30px 40px;
     font-size: 14px;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
     border-radius: 7px;
 }
 .services .services-box-item-content:before {
@@ -2437,12 +2430,16 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 ---------------------------------------- */
 
 .newsletter {
-    color: #fff;
+    color:#000;
     background-image: url("../img/sections/contactform-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 110%;
+}
+.bet-error {
+  margin-left: 10px;
+  color: #fff;
 }
 .newsletter p {
     color: #fff;
@@ -3907,10 +3904,24 @@ body.skew .portfolio .container  {
 .game-info-tab-top {
   margin-bottom: 30px;
   color: #ccc;
+  font-size: 24px;
+  font-weight: 700;
 }
 .game-label {
   color: black;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.b-calc-item__block__content {
+    position: absolute;
+    height: 100%;
+    top: 12px;
+    right: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .pricing--heading {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
