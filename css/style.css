@@ -69,8 +69,8 @@ body {
     background-color: #fff;
 }
 .section-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 90px 0;
+    
+    padding: 25px 0;
 }
 .about .container,
 .services .container,
@@ -1502,7 +1502,7 @@ body.dark .header .logo a img.logo-light {
 }
 body.dark .header .logo a img.logo-dark {
     opacity: 1;
-    width: 75px;
+    width: 90px;
     position: relative;
 }
 body.dark .header.header-fixed .logo a img.logo-light {
@@ -2017,6 +2017,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     margin: -60px;
     font-size: 228px;
     opacity: 0.2;
+    display: none;
 }
 .services .services-box-item-content h2 {
     position: relative;
@@ -2393,7 +2394,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 ---------------------------------------- */
 
 .facts {
-    background-image: url("../img/sections/facts-bg.jpg");
+    background: #242424;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -2430,8 +2431,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 ---------------------------------------- */
 
 .newsletter {
-    color:#000;
-    background-image: url("../img/sections/contactform-bg.jpg");
+    background: #242424;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3915,13 +3915,16 @@ body.skew .portfolio .container  {
     position: absolute;
     height: 100%;
     top: 12px;
-    right: 25px;
+    right: 48px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
+}
+.card-action {
+  margin-top: 135px;
 }
 .pricing--heading {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
