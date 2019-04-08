@@ -68,16 +68,17 @@ body {
     overflow: hidden;
     background-color: #fff;
 }
-.section-overlay {
+/*.section-overlay {
     
     padding: 25px 0;
-}
+}*/
 .about .container,
 .services .container,
 .team .container,
 .blog .container,
 .contact .container {
     padding: 70px 15px !important;
+    padding-top: 15px!important;
 }
 .about .container,
 .team .container {
@@ -1930,7 +1931,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     background-color: #efefef;
 }
 .services .services-box {
-    margin: 25px 0;
+    margin: 0px 0;
 }
 .services .services-box:before {
     content: "";
@@ -2031,6 +2032,10 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     position: relative;
     margin: 12px 0;
     font-size: 13px;
+}
+.facts .container, .stat .container {
+  padding:70px 15px!important;
+  padding-top: 15px!important;
 }
 .services[data-icon]:before,
 .services[class^="icon-"]:before,
@@ -2404,6 +2409,17 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     margin-top: 65px;
     text-align: center;
 }
+.fact-badges .item {
+  width: 20%;
+  float: left;
+  padding:10px;
+}
+.fact-badges h4 {
+  font-size: 13px;
+}
+.fact-badges h2 {
+  font-size: 20px;
+}
 .fact-badges h2 {
     margin-top: 20px;
 }
@@ -2426,6 +2442,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 .facts h4 {
     margin: 25px 0;
     font-weight: 700;
+    font-size: 13px;
 }
 /* Newsletter
 ---------------------------------------- */
@@ -3171,6 +3188,10 @@ body.blog-page article .comments-form .custom-button:before {
 
 .logos {
     background-color: #fff;
+}
+.logo p.text-head {
+  position: absolute;
+  width: 50%;
 }
 .bx-wrapper {
     margin: 70px 0 70px;
@@ -3924,7 +3945,14 @@ body.skew .portfolio .container  {
     align-items: center;
 }
 .card-action {
-  margin-top: 135px;
+  margin-top: 100px;
+}
+.cd-time {
+  min-height: 20px; 
+  max-height: 20px;
+}
+.cd-time span {
+  color: #ccc;
 }
 .pricing--heading {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -4243,4 +4271,25 @@ button.btn-warning {
 #pricing3 p.heading--desc {
   color: #000;
   text-align: center;
+}
+@media (max-width: 560px) {
+  .logo p.text-head {
+    width: 100%;
+  }
+  button.btn-warning {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .fact-badges .item {
+    width: 50%;
+  }
+  .fact-badges .fa {
+    font-size: 65px;
+  }
+  .fact-badges h4 {
+    font-size: 10px;
+  }
+ .services .services-box-item .services-box-item-content {
+    height: 405px;
+  }
 }
