@@ -57,8 +57,11 @@
 
 									<!-- Logo Black Ends -->
 								</a>
-								<p class="text-head">1UP is a decentralized social gambling platform built on the Tron (TRX) Blockchain. Our goal is to provide a safe and
-									secure place for users to enjoy 1UP games.</p>
+								<p class="text-head">
+									1UP is a collection of smart contracts built on the Tron (TRX) Blockchain.
+									<br />
+									1UP is a sustainable & secure product that promotes longevity for all users.
+								</p>
 							</div>
 							<!-- Logo Ends -->
 							<!-- Hamburger Icon Starts -->
@@ -74,16 +77,18 @@
 							<!-- Navigation Menu Starts -->
 							<div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
 								<ul class="nav-menu-inner ml-auto">
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> Home</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-gamepad" aria-hidden="true"></i>
-											Dice</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									<li>
+										<a id="home-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="index.html"><i class="fa fa-home"></i>
+											Home
+										</a>
+									</li>
+									<li><a id="contract-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 											Contract</a></li>
 									<li>
-										<a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-telegram" aria-hidden="true"></i>
+										<a id="telegram-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-telegram" aria-hidden="true"></i>
 											Telegram</a>
 									</li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-user"></i> FAQs</a></li>   
+									<li><a id="faq-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#"><i class="fa fa-user"></i> FAQs</a></li>   
 								</ul>
 							</div>
 						</div>
@@ -115,7 +120,7 @@
 					</div>
 					<!-- Divider Ends -->
 					<!-- Services Starts -->
-					<div class="row">
+					<div class="row card-container">
 						<!-- Service Item Starts -->
 						<div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
 							<div class="game-info-tab-top">
@@ -123,19 +128,19 @@
 							</div>
 							<div class="services-box-item-content fa fa-anchor game-info-tab wrap-investments" style="">
 								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-12 game-label" style="margin-bottom: 30px">
-										Your Referral: <a href="#"><span class="wrap-refferral"></span></a>
+									<div class="col-xs-12 col-sm-12 col-md-12 game-label" style="margin-bottom: 20px; color: #fff;">
+										<div style="margin-bottom: 5px;">Your Referrer:</div> <a target="_blank" href="https://p3t.network/?masternode=TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6"><span class="wrap-refferral">TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6</span></a>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12">
 										<label class="game-label">Total Credits</label>
-										<div class="b-calc-item__block__content"><span>TRX</span></div>
+										<div class="b-calc-item__block__content"><span style="color: #000;">TRX</span></div>
 										<input type="number" class="form-control" name="player_investments" 500" readonly disabled placeholder="0"> 
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 15px">
 										<label class="game-label">Enter Deposit Amount</label>
-										<div class="b-calc-item__block__content" style="top:-6px;right:50px"><span>TRX</span></div>
+										<div class="b-calc-item__block__content" style="top:-2px;right:50px"><span style="color: #000;">TRX</span></div>
 										<input type="number" class="form-control" name="investments" placeholder="0" style="margin-bottom: 10px;">
-										<span>You will receive 90% of the TRX you deposit as credits</span>
+										<span>You will be credited 90% of your deposit</span>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 wrap-game-action">
 										<button class="btn btn-warning btn-investment">Deposit</button>
@@ -159,28 +164,28 @@
 										<div class="pricing--heading text--center wrap-reward" style="height: 233px;">
 
 											<div class="pricing--desc game-label" style="margin-bottom: 30px">
-												Dividends are calculated every minute
+												Dividends are calculated every minute.
 												<!--  <div style="margin-top: 10px">
 													 <span class="your-total-withdraws">0.000</span>
 													 TRX 
 												 </div> --> 
 											</div>
-											<div class="pricing--desc game-label" style="margin-top: 10px">
-												Your Referrals Rewards: 
-												<div style="margin-top: 10px">
+											<div class="pricing--desc game-label" style="margin-top: 59px">
+												Your Referral Rewards: 
+												<div style="margin-top: 10px; margin-bottom: 38px;">
 													<span class="your-referrals">0.000</span>
 													TRX 
 												</div> 
 											</div>
 											<div class="pricing--desc game-label" style="margin-top: 10px">
-												Your Dividends (Include Referral Rewards)
+												Your Dividends (<span style="font-style: italic;">including referral rewards</span>)
 												<div style="margin-top: 10px">
 													<span class="your-dividents-can-withdraw">0.000</span> TRX / <span class="your-dividents">0.000</span> TRX
 												</div> 
 
 											</div>
-											<div class="pricing--desc game-label" style="font-size: 11px; margin-top: 50px; margin-bottom: 30px">The lesser of 3.33% of total credits plus referrals or 0.05% of the contract balance</div>
-											<div class="row">
+											<!-- <div class="pricing--desc game-label" style="font-size: 11px; margin-top: 50px; margin-bottom: 30px">The lesser of 3.33% of total credits plus referrals or 0.05% of the contract balance</div> -->
+											<div class="row" style="margin-top: 51px;">
 												<div class="col-xs-12 col-sm-12 col-md-6">
 													<button class="btn btn-warning btn-withdraw">Withdraw</button>
 												</div>
@@ -200,7 +205,7 @@
 						<!-- Service Item Starts -->
 						<div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
 							<div class="game-info-tab-top">
-								Exit Game 
+								Game Over
 							</div>
 
 							<div class="services-box-item-content fa fa-anchor game-info-tab" >
@@ -209,17 +214,21 @@
 										<div class="pricing-panel">
 											<!--  Invest heading  -->
 											<div class="pricing--heading text--center" style="height: 233px;">
-
+												<div>
 												<div class="pricing--desc" style="font-size: 40px; text-align: center; margin-bottom: 20px;font-weight: 700">
-													<span class="your-invested-capital" style="color: black">0.000 TRX</span>                                     
+													<span class="your-invested-capital" style="color: #fff">0.000 TRX</span>                                     
 												</div>
-												<div style="color: black">
-													Selecting the game over button will pay out 50% of your total credits. The remaining 50% will be permanently added to
-													the contract.
+												<div style="color: #fff; height: 178px;">
+													<div style="padding-top: 12px; text-align: center;">
+													Selecting the Exit Game button will pay out 50% of your total credits. The remaining 50% will be permanently added to
+													the contract.</div>
 												</div>
-												<div class="row">
-													<div class="col-xs-12 col-sm-12 col-md-6" style="text-align: center; margin-top: 125px;">
-														<button class="btn btn-warning btn-withdraw-investments">Exit Your Invested Capital</button>
+											</div>
+												<div class="row" style="display: flex; justify-content: center;">
+													<div class="col-xs-12 col-sm-12 col-md-6" style="text-align: center;">
+														<div>
+															<button class="btn btn-warning btn-withdraw-investments">Exit Game</button>
+														</div>
 													</div>
 
 												</div>
@@ -249,18 +258,22 @@
 						<!-- Main Heading Starts -->
 						<div class="text-center top-text">
 							<h1><span>Percentage</span> Boosts</h1>
-							<span>Percentage boosts occur every 24 hours if users don’t withdraw dividends. 0.02% is added every day until users are receiving 2.0% per day. If you withdraw the dividends at any point, then the percentage resets to 1%.</span>
+							<span>Every 24 hours you will receive a +0.02% boost on your dividend percentage capped at a maximum of 2%. Dividend withdrawals will reset 
+									your dividend percentage to 1%.</span>
 						</div>
 						<!-- Main Heading Starts -->
 						<!-- Fact Badges Starts -->
 						<div class="fact-badges clearfix">
 							<span style="float: left;width: 5%">1%</span>
-							<div class="mb-3 progress" style="float: left;width: 90%;height: 23px">
+							<div class="mb-3 progress" style="width: 90%;float:left;height: 25px">
 		                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" class="progress-bar bg-primary" style="width: 40%;background-color:#daa520!important;" id="line-percentage">
-		                        	<p style="margin: 0;text-align: center;">50%</p>
+		                        	<!-- <p style="margin: 0;text-align: center;">50%</p> -->
 		                        	<!----></div>
 		                    </div>
-		                    <span style="float: right;width: 5%">2%</span>
+												<span>2%</span>												
+						</div>
+						<div style="text-align: center;font-size: 18px;">
+							Current: <span class="line-percentage">1.02%</span>
 						</div>
 						<!-- Fact Badges Ends -->
 					</div>
@@ -274,7 +287,7 @@
 						<!-- Main Heading Starts -->
 						<div class="text-center top-text">
 							<h1><span>Power</span> Up</h1>
-							<span style="color: #fff">Card holders will receive a percentage of all deposits into the contract while holding a card. Every time
+							<span style="color: #fff">Card holders will receive a percentage of all deposits while holding a card. Every time
 								the card flips the price doubles. All cards have a half life which reduces the cards price by half after a set amount of time.</span>
 						</div>
 						<!-- Main Heading Starts -->
@@ -290,10 +303,14 @@
 								<!-- Service Item Cover Ends -->
 								<!-- Service Item Content Starts -->
 								<div class="services-box-item-content fa fa-id-card wrap-card-2 card-content">
-									<h2>Master Card</h2>
+									<h2 class="card-header">SILVER</h2>
 									<p>0.25% of all deposits</br> 1 day half life</p>
 									<div class="cd-time">
 										<span class="card-2-cd-time">00 : 00 : 00</span>
+									</div>
+									<div style="color: #ccc;">
+										<p style="margin-bottom: 0;">Address:</p>
+										<div class="card-owner">TEhfxm3ZPmg1qydGHmhkm4NaTbKuPMdjrM</div>
 									</div>
 									<div class="card-action">
 										<center>
@@ -312,11 +329,15 @@
 								<!-- Service Item Cover Ends -->
 								<!-- Service Item Content Starts -->
 								<div class="services-box-item-content fa fa-id-card-o wrap-card-1 card-content">
-									<h2>Master Card</h2>
+									<h2 class="card-header">GOLD</h2>
 									<p>0.5% of all deposits</br> 3 day half life</p>
 									<div class="cd-time">
 										<span class="card-1-cd-time">00 : 00 : 00</span>
 									</div>
+									<div style="color: #ccc;">
+											<p style="margin-bottom: 0;">Address:</p>
+											<div class="card-owner">TEhfxm3ZPmg1qydGHmhkm4NaTbKuPMdjrM</div>
+										</div>
 									<div class="card-action">
 										<center>
 											<button class="btn btn-warning btn-buy-card" data-price="0" data-card-id="1">Buy for 100 TRX</button>
@@ -332,11 +353,15 @@
 								<!-- Service Item Cover Ends -->
 								<!-- Service Item Content Starts -->
 								<div class="services-box-item-content fa fa-credit-card wrap-card-0 card-content">
-									<h2>Master Card</h2>
+									<h2 class="card-header">PLATINUM</h2>
 									<p>1.25% of all deposits</br> 5 day half life</p>
 									<div class="cd-time">
 										<span class="card-0-cd-time">00 : 00 : 00</span>
 									</div>
+									<div style="color: #ccc;">
+											<p style="margin-bottom: 0;">Address:</p>
+											<div class="card-owner">TEhfxm3ZPmg1qydGHmhkm4NaTbKuPMdjrM</div>
+										</div>
 									<div class="card-action">
 										<center>
 											<button class="btn btn-warning btn-buy-card" data-price="0" data-card-id="0">Buy for 100 TRX</button>
@@ -368,7 +393,7 @@
 			<!-- Divider Starts -->
 			<!-- Divider Ends -->
 			<!-- Services Starts -->
-			<div class="row" style="margin-top: 15px">
+			<div class="row" style="margin-top: 30px">
 				<!-- Service Item Starts -->
 
 
@@ -386,12 +411,20 @@
                                             <div class="pricing-panel">
                                                 <!--  Pricing heading  -->
                                                 <div class="text--center">
-                                                    <h2 style="color: black">Your referral link</h2>
-
-													<input type="text" class="form-control your-referral-link" readonly>    
-                                                    <h2 style="color: black">Your Vanity link</h2>
-
-                                                    <input type="text" class="form-control your-vanity-link" readonly> 
+                                                    <h2 class="referral-program-box-title">Your referral link</h2>
+																										<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+																										<input id="your-referral-link" type="text" class="form-control your-referral-link" readonly value="https://p3t.network/?masternode=TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6">    
+																										<button class="clip-button" data-clipboard-target="#your-referral-link">
+																												<img class="clip" src="assets/images/icons/clipboard.png" />
+																										</button>																										
+																										</div>
+                                                    <h2 style="margin-top: 55px;" class="referral-program-box-title">Your Vanity link</h2>
+																										<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+																											<input id="vanity-link" type="text" class="form-control your-vanity-link" readonly value="1UP_Mac"> 
+																											<button class="clip-button" data-clipboard-target="#vanity-link">
+																												<img class="clip" src="assets/images/icons/clipboard.png" />
+																											</button>
+																										</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -411,14 +444,20 @@
                             <div class="pricing-panel">
                                 <!--  Invest heading  -->
 								<div class="pricing--heading text--center" style="height: 227px;">
-                                    <h2 style="color: black;text-align: center;">Vanity referral name</h2>
-                                    <input type="text" class="form-control" name="vanity"  placeholder="Enter Name">
-									<div class="vanity-err" style="margin-top: 15px"></div>
-                                    <div class="pricing--desc" style="color: black; margin-top: 15px">
-                                        Register a unique name and unlock the referral system permanently.
-                                    </div>
+																		<h2 class="referral-program-box-title" style="text-align: center;">Vanity referral name</h2>
+																		<div class="referral-program-content" style="height: 96px;">
+																			
+																			<div style="display: flex; justify-content: space-between;">
+																				<input type="text" class="form-control" name="vanity"  placeholder="Enter Name" />
+																				
+																			</div>
+										<div class="vanity-err" style="margin-top: 15px"></div>
+																			<div class="pricing--desc" style="color: #fff; margin-top: 15px">
+																					Register a unique name and unlock the referral system permanently.
+																			</div>
+																	</div>
                                     <center>
-                                        <button class="btn btn-warning btn-buy-vanity" style="margin-top: 115px">Purchase for 100 TRX</button>
+                                        <button class="btn btn-warning btn-buy-vanity" style="margin-top: 51px">Buy for 100 TRX</button>
                                     </center>
                                 </div>
                             </div>
@@ -454,7 +493,7 @@
 						<div class="item">
 							<h4>Contract Balance</h4>
 							<!--  <i class="fa fa-briefcase"></i> -->
-							<i class="fa fa-university" aria-hidden="true"></i>
+							<img src="assets/images/contractbalance.png" height="90px" />
 
 
 							<h2>
@@ -467,8 +506,7 @@
 							<h4>Total Deposits</h4>
 							<!-- <i class="fa fa-clock-o"></i> -->
 							<!-- <i class="fa fa-money" aria-hidden="true"></i> -->
-							<i class="fa fa-cart-plus" aria-hidden="true"></i>
-
+							<img src="assets/images/deposit.png" height="90px" />
 							<h2>
 								<div class="counting total-deposits">0 TRX</div>
 							</h2>
@@ -478,8 +516,7 @@
 						<!-- Fact Badge Item Starts -->
 						<div class="item">
 							<h4>Total Withdrawals</h4>
-							<!-- <i class="fa fa-home"></i> -->
-							<i class="fa fa-money" aria-hidden="true"></i>
+							<img src="assets/images/withdraw.png" height="90px" />
 							<h2>
 								<div class="counting total-out">0 TRX </div>
 							</h2>
@@ -489,7 +526,7 @@
 						<!-- Fact Badge Item Starts -->
 						<div class="item">
 							<h4>Transactions</h4>
-							<i class="fa fa-exchange" aria-hidden="true"></i>
+							<img src="assets/images/transactions.png" height="90px" />
 							<h2>
 								<div class="counting total-transactions">0</div>
 							</h2>
@@ -499,7 +536,7 @@
 						<!-- Fact Badge Item Starts -->
 						<div class="item">
 							<h4>Wallets</h4>
-							<i class="fa fa-users" aria-hidden="true"></i>
+							<img src="assets/images/wallet.png" height="90px" />
 							<h2>
 								<div class="counting total-wallet">0</div>
 							</h2>
@@ -540,13 +577,12 @@
 	<!-- Services Section Ends -->
 	<!-- Logos Section Ends -->
 	<!-- Footer Section Starts -->
-	<footer class="footer text-center">
+	<footer class="footer">
 		<!-- Container Starts -->
 		<div class="container">
 			<!-- Copyright Text Starts -->
-			<p>1UP ­ A Decentralized Social Gambling Platform on Tron</p>
-			<p>
-				&copy; Copyright 2019 1Up
+			<p style="text-align: center;">
+				&copy; 2019 1UP team. All rights reserved.
 			</p>
 			<!-- Copyright Text Ends -->
 			<!-- Social Media Links Starts -->
@@ -573,7 +609,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script> -->
 <script src="js/jquery.min.js"></script>
 <script src="js/clipboard.min.js"></script>
-<script src="js/chart.min.js"></script>
+<!-- <script src="js/chart.min.js"></script> -->
 <!-- <script src="js/system.js"></script> -->
 <script src="js/encode.js?v=2"></script>
 <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
@@ -606,11 +642,31 @@
 
 <!-- Revolution Slider Initialization Starts -->
 <script>
+	$('.clip-button').tooltip({
+		trigger: 'click',
+		placement: 'bottom'
+	});
+	function setTooltip(btn, message) {
+  $(btn).tooltip('hide')
+    .attr('data-original-title', message)
+    .tooltip('show');
+	}
+
+	function hideTooltip(btn) {
+		setTimeout(function() {
+			$(btn).tooltip('hide');
+		}, 1000);
+	}
 	(function () {
 		"use strict";
 		var tpj = jQuery;
 		var revapi68;
 		tpj(document).ready(function () {
+			var clipboard = new ClipboardJS('.clip-button');
+			clipboard.on('success', function(e) {
+				setTooltip(e.trigger, 'Copied!');
+				hideTooltip(e.trigger);
+			});
 			if (tpj("#rev_slider").revolution == undefined) {
 				revslider_showDoubleJqueryError("#rev_slider");
 			} else {
