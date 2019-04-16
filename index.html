@@ -78,17 +78,29 @@
 							<div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
 								<ul class="nav-menu-inner ml-auto">
 									<li>
-										<a id="home-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="index.html"><i class="fa fa-home"></i>
+										<a id="home-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="index.html">
+											<i class="fa fa-home"></i>
 											Home
 										</a>
 									</li>
-									<li><a id="contract-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-											Contract</a></li>
 									<li>
-										<a id="telegram-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-telegram" aria-hidden="true"></i>
-											Telegram</a>
+										<a id="contract-navbar" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services">
+											<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+											Contract
+										</a>
 									</li>
-									<li><a id="faq-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#"><i class="fa fa-user"></i> FAQs</a></li>   
+									<li>
+										<a id="telegram-navbar" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio">
+											<i class="fa fa-telegram" aria-hidden="true"></i>
+											Telegram
+										</a>
+									</li>
+									<li>
+										<a id="faq-navbar" data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#">
+											<i class="fa fa-user"></i> 
+											FAQs
+										</a>
+									</li>   
 								</ul>
 							</div>
 						</div>
@@ -129,7 +141,7 @@
 							<div class="services-box-item-content fa fa-anchor game-info-tab wrap-investments" style="">
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 game-label" style="margin-bottom: 20px; color: #fff;">
-										<div style="margin-bottom: 5px;">Your Referrer:</div> <a target="_blank" href="https://p3t.network/?masternode=TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6"><span class="wrap-refferral">TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6</span></a>
+										<div style="margin-bottom: 5px;">Your Referrer:</div> <a target="_blank" href=""><span class="wrap-refferral">TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6</span></a>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12">
 										<label class="game-label">Total Credits</label>
@@ -266,7 +278,7 @@
 						<div class="fact-badges clearfix">
 							<span style="float: left;width: 5%">1%</span>
 							<div class="mb-3 progress" style="width: 90%;float:left;height: 25px">
-		                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" class="progress-bar bg-primary" style="width: 40%;background-color:#daa520!important;" id="line-percentage">
+		                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" class="progress-bar bg-primary" style="width: 0%;background-color:#daa520!important;" id="line-percentage">
 		                        	<!-- <p style="margin: 0;text-align: center;">50%</p> -->
 		                        	<!----></div>
 		                    </div>
@@ -387,7 +399,7 @@
 			<!-- Main Heading Starts -->
 			<div class="text-center top-text">
 				<h1><span>Refferal</span> Program</h1>
-				<span>Get 4.0% of investments made with your affiliate link instantly. You need to invest at least 1 TRX in Daily ROI in order to activate the referral link.</span>
+				<span>Get 4.0% of investments made with your affiliate link instantly. You need to invest at least 1 TRX in 1UP in order to activate the referral link.</span>
 			</div>
 			<!-- Main Heading Starts -->
 			<!-- Divider Starts -->
@@ -413,14 +425,14 @@
                                                 <div class="text--center">
                                                     <h2 class="referral-program-box-title">Your referral link</h2>
 																										<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-																										<input id="your-referral-link" type="text" class="form-control your-referral-link" readonly value="https://p3t.network/?masternode=TVNbjPGudR1NFcVCKoC1yGn5DmMgzYRzY6">    
+																										<input id="your-referral-link" type="text" class="form-control your-referral-link" readonly value="">    
 																										<button class="clip-button" data-clipboard-target="#your-referral-link">
 																												<img class="clip" src="assets/images/icons/clipboard.png" />
 																										</button>																										
 																										</div>
                                                     <h2 style="margin-top: 55px;" class="referral-program-box-title">Your Vanity link</h2>
 																										<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-																											<input id="vanity-link" type="text" class="form-control your-vanity-link" readonly value="1UP_Mac"> 
+																											<input id="vanity-link" type="text" class="form-control your-vanity-link" readonly value=""> 
 																											<button class="clip-button" data-clipboard-target="#vanity-link">
 																												<img class="clip" src="assets/images/icons/clipboard.png" />
 																											</button>
@@ -704,30 +716,6 @@
 				});
 			}
 		});
-
-		// GOOGLE MAP
-		// function init_map() {
-
-		// 	var myOptions = {
-		// 		scrollwheel: false,
-		// 		zoom: 12,
-		// 		center: new google.maps.LatLng(40.7127837, -74.00594130000002),
-		// 		mapTypeId: google.maps.MapTypeId.ROADMAP
-		// 	};
-		// 	var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-		// 	var marker = new google.maps.Marker({
-		// 		map: map,
-		// 		icon: "img/markers/goldenrod.png",
-		// 		position: new google.maps.LatLng(40.7127837, -74.00594130000002)
-		// 	});
-		// 	var infowindow = new google.maps.InfoWindow({
-		// 		content: "<strong>SALIMO</strong><br>1234 Disney Street, New York City<br>"
-		// 	});
-		// 	google.maps.event.addListener(marker, "click", function() {
-		// 		infowindow.open(map, marker);
-		// 	});
-		// }
-		// google.maps.event.addDomListener(window, "load", init_map);
 
 	})(jQuery);
 </script>
